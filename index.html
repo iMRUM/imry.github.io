@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imry Rodkin | Software Developer</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .bg-gradient {
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .skill-tag {
+      transition: all 0.3s ease;
+    }
+    .skill-tag:hover {
+      transform: scale(1.05);
+    }
+    .profile-image-container img {
+      filter: brightness(1);
+      transition: transform all 0.5s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 40%;
+      transition: 0.4s ease;
+    }
+    .profile-image-container img:hover {
+      filter: brightness(1.1);
+      transform: scale(1.04) rotate(2deg);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+    }
+    .profile-image-container {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero Section -->
+<header class="bg-gradient text-white">
+  <div class="container mx-auto px-6 py-16 md:py-24 md:flex md:items-center">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi there, I'm Imry 👋</h1>
+      <p class="text-xl mb-8 leading-relaxed">Passionate software developer crafting elegant solutions with modern technologies.</p>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+        <a href="#projects" class="bg-white text-indigo-600 font-medium py-2 px-6 rounded-full hover:bg-opacity-90 transition-all">View Projects</a>
+        <a href="#contact" class="bg-transparent border-2 border-white text-white font-medium py-2 px-6 rounded-full hover:bg-white hover:text-indigo-600 transition-all">Get In Touch</a>
+      </div>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <div class="relative">
+        <div class="w-68 h-68 bg-white rounded-full p-3 shadow-lg">
+          <div class="relative w-full h-full profile-image-container">
+            <img 
+              src="https://github.com/iMRUM/iMRUM/blob/main/Imry.jpeg?raw=true" 
+              alt="Imry's Profile" 
+              class="w-full h-full object-cover rounded-full"
+            />
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="text-white font-medium">Let's Connect!</p>
+          <div class="flex justify-center space-x-4 mt-2">
+            <a href="https://github.com/iMRUM" target="_blank" class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/imry" target="_blank" class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:rodkin.imry@gmail.com" class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Skills Section -->
+  <section class="py-16 bg-white" id="skills">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">My Skills & Expertise</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Programming Skills -->
+        <div class="card bg-gray-50 rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-laptop-code text-indigo-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Programming Skills</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Network Programming</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Unit Testing</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Protocol Implementation</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">OOP</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">UI Design</span>
+          </div>
+        </div>
+        
+        <!-- Tools & Platforms -->
+        <div class="card bg-gray-50 rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-tools text-indigo-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Tools & Platforms</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">SFML</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Wireshark</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">BeautifulSoup</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Pandoc</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Tabula</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Doxygen</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+          </div>
+        </div>
+        
+        <!-- Operating Systems -->
+        <div class="card bg-gray-50 rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-desktop text-indigo-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold">Operating Systems</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Linux (Mint/Ubuntu)</span>
+            <span class="skill-tag bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Windows</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-16 bg-gray-50" id="projects">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-2">Featured Projects</h2>
+      <p class="text-gray-600 text-center mb-12">A selection of my best work</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="card bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="h-48 bg-indigo-600 flex items-center justify-center">
+            <i class="fas fa-dice text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-bold">Monopoly 2025</h3>
+              <span class="text-xs font-medium bg-indigo-100 text-indigo-700 py-1 px-2 rounded">2025</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">C++</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">SFML</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">MVC</span>
+            </div>
+            <p class="text-gray-600 mb-4">A fully functional Monopoly game engine built with Modern C++, SFML, and an MVC architecture. Implements SOLID principles, Singleton, Composite, and State patterns.</p>
+            <a href="https://imrum.github.io/cpponopoly/html/" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800">
+              Read the docs <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="card bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="h-48 bg-purple-600 flex items-center justify-center">
+            <i class="fas fa-network-wired text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-bold">QUIC Streams</h3>
+              <span class="text-xs font-medium bg-purple-100 text-purple-700 py-1 px-2 rounded">2024</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Networking</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">SOLID</span>
+            </div>
+            <p class="text-gray-600 mb-4">A Python implementation of the QUIC protocol, featuring modules for streams, frames, packets, and connections following relevant RFCs. Built with SOLID principles.</p>
+            <a href="https://imrum.github.io/auquic/html/" target="_blank" class="inline-flex items-center text-purple-600 hover:text-purple-800">
+              Read the docs <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="card bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="h-48 bg-blue-600 flex items-center justify-center">
+            <i class="fas fa-plane text-white text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-bold">Airline Manager</h3>
+              <span class="text-xs font-medium bg-blue-100 text-blue-700 py-1 px-2 rounded">2023</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Java</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Design Patterns</span>
+              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">OOP</span>
+            </div>
+            <p class="text-gray-600 mb-4">A Java project demonstrating design patterns like Factory, Observer, Strategy, and State, built as part of my OOP course. Earned 100/100 in grading.</p>
+            <a href="https://github.com/iMRUM/OOP-Sem1-2023-4-AU" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+              GitHub Repo <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Section -->
+  <section class="py-16 bg-white" id="learning">
+    <div class="container mx-auto px-6">
+      <div class="md:flex md:items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h2 class="text-3xl font-bold mb-6">Learning & Development</h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">I'm continuously learning and exploring new technologies to stay at the forefront of software development.</p>
+          <p class="text-gray-700 mb-8">Currently focusing on:</p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-chevron-right text-indigo-600 mr-3"></i>
+              <span>Advanced Java programming</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-chevron-right text-indigo-600 mr-3"></i>
+              <span>Network protocols and their implementations</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-chevron-right text-indigo-600 mr-3"></i>
+              <span>Modern C++ development</span>
+            </li>
+          </ul>
+        </div>
+        <div class="md:w-1/2 md:pl-12 flex justify-center">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white p-6 rounded-lg shadow-xl">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+                  <i class="fab fa-java text-4xl text-blue-600 mb-2"></i>
+                  <span class="text-sm font-medium">Java</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+                  <i class="fas fa-network-wired text-4xl text-green-600 mb-2"></i>
+                  <span class="text-sm font-medium">Networking</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+                  <i class="fab fa-cuttlefish text-4xl text-purple-600 mb-2"></i>
+                  <span class="text-sm font-medium">C++</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+                  <i class="fas fa-code-branch text-4xl text-indigo-600 mb-2"></i>
+                  <span class="text-sm font-medium">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-gradient text-white" id="contact">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Let's Connect!</h2>
+      <p class="text-xl mb-10 max-w-2xl mx-auto">I'm open to discussing new ideas, collaborations, or opportunities. Feel free to reach out!</p>
+      
+      <div class="flex justify-center space-x-6">
+        <a href="https://github.com/iMRUM" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+          <i class="fab fa-github text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/imry" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+          <i class="fab fa-linkedin-in text-xl"></i>
+        </a>
+        <a href="mailto:rodkin.imry@gmail.com" class="flex items-center justify-center w-12 h-12 rounded-full bg-white text-indigo-600 hover:bg-opacity-90 transition-all">
+          <i class="fas fa-envelope text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-900 text-gray-400 text-sm">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2025 Imry Rodkin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Scroll to top button functionality
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('opacity-100');
+        scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+      } else {
+        scrollToTopBtn.classList.remove('opacity-100');
+        scrollToTopBtn.classList.add('opacity-0', 'invisible');
+      }
+    });
+    
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
